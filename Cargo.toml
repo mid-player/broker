@@ -1,0 +1,17 @@
+[package]
+name = "mid-player-broker"
+version = "0.1.0"
+authors = ["Divino G. de Menezes Neto <dgmneto@gmail.com>"]
+
+[build-dependencies]
+  protoc-rust="2.1.4"
+
+[dependencies]
+  tokio="0.1"
+  tokio-threadpool = "0.1.8"
+  futures="0.1"
+  bytes="0.4"
+  chashmap = "2.2.0"
+  lazy_static = "1.2.0"
+  protobuf = "2.1.4"
+  byteorder = "1.2.7"
