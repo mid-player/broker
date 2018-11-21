@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: mid-player-broker
-        image: divinomenezes/mid-player-broker:0.0.1
+        image: divinomenezes/mid-player-broker:0.0.2
         imagePullPolicy: Always
         ports:
         - name: broker

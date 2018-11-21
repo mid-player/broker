@@ -34,7 +34,7 @@ lazy_static! {
 fn main() {
     let thread_pool = Builder::new()
             .build();
-    let addr = env::args().nth(1).unwrap_or("127.0.0.1:8080".to_string());
+    let addr = env::args().nth(1).unwrap_or("0.0.0.0:8080".to_string());
     let addr = addr.parse().unwrap();
 
     let socket = TcpListener::bind(&addr).unwrap();

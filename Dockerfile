@@ -1,4 +1,4 @@
-FROM rust:1.30
+FROM rust:1.30-slim
 RUN USER=root cargo new --bin mid-player-broker
 WORKDIR /mid-player-broker
 COPY ./Cargo.lock ./Cargo.lock
