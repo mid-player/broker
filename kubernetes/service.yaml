@@ -6,6 +6,7 @@ metadata:
   labels:
     app: mid-player-broker
 spec:
+  clusterIP: None
   ports:
   - port: 8080
     name: tcp
