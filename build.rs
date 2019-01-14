@@ -1,12 +1,8 @@
-extern crate protoc_rust;
+extern crate prost_build;
 
 fn gen_pb_protocols() {
-  protoc_rust::run(protoc_rust::Args {
-    out_dir: "src/protos",
-    includes: &["protocols/proto"],
-    input: &["protocols/proto/clients_protocol.proto"],
-    customize: Default::default()
-  }).unwrap();
+  prost_build::compile_protos(&["protocols/proto/clients_protocol.proto"],
+      &["protocols/proto/"]).unwrap();
 }
 
 fn main() {
